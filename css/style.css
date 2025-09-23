@@ -7,11 +7,11 @@ html {
   margin: 0;
 }
 
-.menu li {
+.menu {
   margin: 0;
   padding: 0;
 }
 
-.menu {
+.menu li{
   display: inline-block;
 }
