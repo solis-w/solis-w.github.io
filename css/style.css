@@ -1,3 +1,17 @@
 html {
   scroll-behavior: smooth;
 }
+
+.wrapper {
+  width: 880px;
+  margin: 0;
+}
+
+.menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: inline-block;
+}
