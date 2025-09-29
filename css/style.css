@@ -4,14 +4,23 @@ html {
 
 .wrapper {
   width: 880px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .menu {
+  list-style: none;
   margin: 0;
   padding: 0;
+  position: sticky;
+  top: 4px;
+  background-color: azure;
 }
 
-.menu li{
+.menu li {
   display: inline-block;
+}
+
+.centered {
+  margin: 0 auto;
+  display: block;
 }

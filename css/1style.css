@@ -1,0 +1,9 @@
+.centered {
+margin: 0 auto;
+display: block;
+}
+
+.wrapper {
+margin: 0 auto;
+width:  880px;
+}
