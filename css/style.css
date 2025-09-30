@@ -2,6 +2,23 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background: #eeaeca;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(217, 156, 213, 1) 28%,
+    rgba(111, 162, 237, 1) 83%,
+    rgba(45, 112, 189, 1) 100%
+  );
+}
+
+.extra {
+  font-family: "Freckle Face", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .wrapper {
   width: 880px;
   margin: 0 auto;
