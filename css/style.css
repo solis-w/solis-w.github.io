@@ -19,6 +19,10 @@ body {
   font-family: "Freckle Face", system-ui;
 }
 
+.allborder {
+  padding: 9px;
+  border-color: #7e33a4;
+}
 .picc {
   border-radius: 30px;
   padding: 8px;
