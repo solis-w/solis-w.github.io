@@ -3,34 +3,54 @@ html {
 }
 
 body {
-  background: #eeaeca;
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(217, 156, 213, 1) 28%,
-    rgba(111, 162, 237, 1) 83%,
-    rgba(45, 112, 189, 1) 100%
-  );
+  background: #f5e5ec;
 }
 
 .extra {
   font-family: "Freckle Face", system-ui;
   font-weight: 400;
   font-style: normal;
+  border-color: #7e33a4;
+  /* border-radius: 90%; */
+  /* background-color: #7e33a4; */
+}
+
+.extra2 {
+  font-family: "Freckle Face", system-ui;
+}
+
+.picc {
+  border-radius: 30px;
+  padding: 8px;
+  background-color: #7e33a4;
 }
 
 .wrapper {
   width: 880px;
   margin: 0 auto;
+  background-color: #efecff;
 }
 
 .menu {
+  font-family: "Freckle Face", system-ui;
   list-style: none;
   margin: 0;
   padding: 0;
   position: sticky;
   top: 4px;
   background-color: azure;
+}
+
+ul.menu {
+  background-color: #7e33a4;
+}
+.navmenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 60px;
+  align-items: center;
+  gap: 8px;
 }
 
 .menu li {
@@ -40,4 +60,222 @@ body {
 .centered {
   margin: 0 auto;
   display: block;
+}
+
+.art {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.plan:hover {
+  color: rgb(121, 160, 187);
+}
+
+/*.parent.child {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}*/
+
+.center-block {
+  text-align: center; /* центрує текст і картинки */
+}
+
+.center-block img {
+  display: block; /* робить зображення блочним */
+  margin: 0 auto; /* центрує зображення */
+  width: 300px; /* (опціонально) задає розмір */
+}
+
+/*.plan {
+  color: rgb(29, 23, 58);
+  padding: 4px;
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  text-align: center;
+  justify-content: space-between;
+}*/
+
+header.art {
+  flex-direction: column;
+}
+
+.other {
+  display: flex;
+  padding: 4px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.menu {
+  list-style: none; /* забирає маркери списку */
+  padding: 0;
+  margin: 0;
+  display: flex; /* розташовує елементи в ряд */
+  justify-content: center; /* центрує меню по ширині */
+  gap: 20px; /* відстань між кнопками */
+  color: rgb(114, 104, 167);
+  padding: 4px;
+  text-decoration: none;
+  /*background-color: rgb(255, 255, 255);*/
+  border-radius: 7px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.plan {
+  text-decoration: none; /* прибирає підкреслення */
+  color: rgb(225, 232, 255); /* колір тексту */
+  font-weight: bold; /* жирний шрифт */
+  background-color: #7e33a4;
+}
+
+header.class {
+  background-color: rgb(201, 201, 250);
+}
+
+div.center-block {
+  background-color: rgb(201, 201, 250);
+  padding: 4px;
+  padding-top: 6px;
+}
+
+div.wrappr {
+  background-color: rgb(209, 230, 255);
+}
+
+.header.other {
+  padding: 6px;
+}
+.child {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  border-radius: 6px;
+}
+.slide-pic {
+  width: 350px;
+  background: rgb(201, 201, 250);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Головна кнопка */
+.slide-pic-header {
+  display: block;
+  background-color: #7e33a4;
+  color: rgb(225, 232, 255);
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Підменю приховане за замовчуванням */
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 10px;
+}
+
+/* Показати підменю при натисканні на головну кнопку */
+#show-submenu:checked + .slide-pic-header + .submenu {
+  max-height: 1000px; /* достатньо для трьох кнопок + списків */
+  padding: 10px;
+}
+
+/* Підкнопки */
+.sub-btn {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 8px 14px;
+  cursor: pointer;
+  display: block;
+}
+.sub-btn:hover {
+  background-color: #d0d0d0;
+}
+
+/* Контент списку */
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  padding-left: 15px;
+}
+
+/* Показати контент при натисканні відповідної підкнопки */
+#love-toggle:checked + .sub-btn + .content,
+#dir-toggle:checked + .sub-btn + .content,
+#int-toggle:checked + .sub-btn + .content {
+  max-height: 500px;
+  opacity: 1;
+}
+
+div.artworks {
+  display: flex;
+  justify-content: center;
+}
+
+/* контактна інфа */
+.contacts-section {
+  width: 350px;
+  margin: 20px auto;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: sans-serif;
+}
+
+.contacts-section h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  color: #7e33a4;
+  text-align: center;
+}
+
+/* Контейнери кнопок */
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Кнопки */
+.child a {
+  display: block;
+  background-color: #e0e0e0;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.child a:hover {
+  background-color: #d0d0d0;
+  transform: translateY(-2px);
 }

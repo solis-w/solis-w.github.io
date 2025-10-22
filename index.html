@@ -23,74 +23,95 @@
 
   </head>
   <body>
+    <div class="site">
     <div class="wrapper">
-    <h1 class="extra"><b>Вітаю на моєму першому сайті 🙂🔥🔥🔥</b></h1>
+      <div class="center-block">
+
+    <h1 class="extra" ><b>Вітаю на моєму першому сайті 🙂🔥🔥🔥</b></h1>
     <br>
     <a href="https://www.youtube.com/shorts/j2MpboPLs0g" target="_blank">
       <img
         src="./images/e56dda1c-cef2-4bc4-aed0-0b811f1bfb93.jpg"
         width="400"
-      />
+      class="picc"/>
     </a>
 
     <h1 class="extra">Я - Соломія Олещук</h1>
 
-    <h2>студент 4 курсу ГД</h2>
+    <h2 class="extra2">4 курс Графічний дизайн</h2>
+  </div>
     <!--ЗМІСТ-->
   
 
-    <p>
+
+<header class="class">
+  <nav class="navmenu">
+    <ul class="menu">
+      <a href="#about" class="plan">Про мене| </a>
+
+      <a href="#works" class="plan">Мої роботи| </a>
+
+      <a href="#contacts" class="plan">контакти</a>
+    </ul>
+    </nav>
+    
+</header>
+  <p>
       Вітаю, шановні колеги. мене звати <b> Соломія </b>, навчаюсь на
       <i>4-му</i> курсі графічного дизайну. Проживаю на Личаківському районі 
       неподалік від Винник.
     </p>
+    
 
-    <ul class="menu">
-      <a href="#about">Про мене| </a>
+ <div class="slide-pic">
+  <input type="checkbox" id="show-submenu" hidden>
+  <label for="show-submenu" class="slide-pic-header">
+    Про мене
+  </label>
 
-      <a href="#works">Мої роботи| </a>
+  <div class="submenu">
+    <!-- Три підкнопки -->
+    <input type="radio" name="section" id="love-toggle" hidden>
+    <label for="love-toggle" class="sub-btn">люблю</label>
+    <div class="content">
+      <ol>
+        <li>малювати</li>
+        <li>грати</li>
+        <li>спати</li>
+        <li>ходити в походи</li>
+      </ol>
+    </div>
 
-      <a href="#contacts">контакти</a>
-    </ul>
+    <input type="radio" name="section" id="dir-toggle" hidden>
+    <label for="dir-toggle" class="sub-btn">напрямки</label>
+    <div class="content">
+      <ul>
+        <li>3D моделювання</li>
+        <li>анімація</li>
+        <li>дизайн / ілюстрація</li>
+      </ul>
+    </div>
 
-    <img src="./images/e56dda1c-cef2-4bc4-aed0-0b811f1bfb93.jpg" width="40" />
-    <img src="./images/e56dda1c-cef2-4bc4-aed0-0b811f1bfb93.jpg" width="40" />
-    <img src="./images/e56dda1c-cef2-4bc4-aed0-0b811f1bfb93.jpg" width="40" />
+    <input type="radio" name="section" id="int-toggle" hidden>
+    <label for="int-toggle" class="sub-btn">цікавить</label>
+    <div class="content">
+      <ol>
+        <li>природа</li>
+        <li>спокій / відпочинок</li>
+        <li>саморозвиток</li>
+      </ol>
+    </div>
+  </div>
+</div>
 
-    <h2 id="about">Про мене</h2>
-    <p>.....................................</p>
-    <p>люблю:</p>
-    <ol>
-      <li>
-        <i> малювати </i>
-      </li>
 
-      <li><i> грати </i></li>
 
-      <li><i> спати </i></li>
-
-      <li><i> ходити в походи </i></li>
-    </ol>
-
-    <p>Цікавлюсь</p>
-    <ul>
-      <li>3D моделюванням</li>
-
-      <li>анімацією</li>
-
-      <li>дизайн/ілюстрацією.</li>
-    </ul>
-
-    <p>Цікавить</p>
-    <ol>
-      <li><b> природа </b></li>
-
-      <li><b> спокій/відпочинок </b></li>
-
-      <li><b> саморозвиток </b></li>
-    </ol>
-
+<div class="artworks">
     <h2 id="works">Мої роботи</h2>
+    </div>
+    <header class="art">
+      
+        <nav class="1_pic">
     <img
         src="./images/5372997374718378405.jpg"
         width="400"
@@ -100,8 +121,9 @@
         src="./images/5372997374718378396.jpg"
         width="400"
       />
-   <br>
-    <img
+   <br></nav>
+    <nav class="1_pic">
+      <img
         src="./images/5372997374718378394.jpg"
         width="400"
       />
@@ -111,32 +133,52 @@
         width="400"
       />
     </a>
+    </nav>
     <br>
- </a>
+ </a> <nav class="1_pic">
       <img
         src="./images/5372997374718378402.jpg"
         width="600"
       />
     </a>
-    <br>
+    <br></nav>
+    <nav class="1_pic">
  <img
         src="./images/cb9540fa-b3b5-4790-9f8b-ae50925b6915_1920x1080.jpg"
         width="600"
       />
-    </a>
+    </a></nav>
+  </header>
 
-    <h3 id="contacts">Контакти</h3>
+<header class="contacts-section">
+  <h3 id="contacts">Контакти</h3>
+  
+  <div class="contacts-container">
+    <div class="child">
      <p>
-      <a href="https://www.instagram.com/solarka_o/?__d=dist" target="_blank">
-        мій інстаграм
+      <a href="https://www.instagram.com/solarka_o/?__d=dist"target="_blank">
+       Instagram
       </a>
     </p>
+    </div>
     
+    <div class="child">
      <p>
       <a href="https://www.youtube.com/shorts/j2MpboPLs0g" target="_blank">
-        мій фейсбук
+        facebook
       </a>
     </p>
+    </div>
+    <div class="child">
+     <p>
+      <a href="https://www.youtube.com/watch?v=qovO6C9m3cg&t=31s" target="_blank">
+        Linkedin
+      </a>
+    </p>
+    </div>
+    </div>
+  </header>
+    </div>
     </div>
   </body>
 </html>
