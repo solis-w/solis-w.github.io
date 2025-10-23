@@ -85,32 +85,15 @@ ul.menu {
   color: rgb(121, 160, 187);
 }
 
-/*.parent.child {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 8px;
-}*/
-
 .center-block {
-  text-align: center; /* центрує текст і картинки */
+  text-align: center;
 }
 
 .center-block img {
-  display: block; /* робить зображення блочним */
-  margin: 0 auto; /* центрує зображення */
-  width: 300px; /* (опціонально) задає розмір */
+  display: block;
+  margin: 0 auto;
+  width: 300px;
 }
-
-/*.plan {
-  color: rgb(29, 23, 58);
-  padding: 4px;
-  text-decoration: none;
-  background-color: rgb(255, 255, 255);
-  border-radius: 5px;
-  text-align: center;
-  justify-content: space-between;
-}*/
 
 header.art {
   flex-direction: column;
@@ -125,25 +108,25 @@ header.art {
 }
 
 .menu {
-  list-style: none; /* забирає маркери списку */
+  list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; /* розташовує елементи в ряд */
-  justify-content: center; /* центрує меню по ширині */
-  gap: 20px; /* відстань між кнопками */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   color: rgb(114, 104, 167);
   padding: 4px;
   text-decoration: none;
-  /*background-color: rgb(255, 255, 255);*/
+
   border-radius: 7px;
   text-align: center;
   justify-content: space-between;
 }
 
 .plan {
-  text-decoration: none; /* прибирає підкреслення */
-  color: rgb(225, 232, 255); /* колір тексту */
-  font-weight: bold; /* жирний шрифт */
+  text-decoration: none;
+  color: rgb(225, 232, 255);
+  font-weight: bold;
   background-color: #7e33a4;
 }
 
@@ -180,7 +163,6 @@ div.wrappr {
   margin-bottom: 20px;
 }
 
-/* Головна кнопка */
 .slide-pic-header {
   display: block;
   background-color: #7e33a4;
@@ -191,7 +173,6 @@ div.wrappr {
   cursor: pointer;
 }
 
-/* Підменю приховане за замовчуванням */
 .submenu {
   max-height: 0;
   overflow: hidden;
@@ -202,13 +183,11 @@ div.wrappr {
   padding: 0 10px;
 }
 
-/* Показати підменю при натисканні на головну кнопку */
 #show-submenu:checked + .slide-pic-header + .submenu {
-  max-height: 1000px; /* достатньо для трьох кнопок + списків */
+  max-height: 1000px;
   padding: 10px;
 }
 
-/* Підкнопки */
 .sub-btn {
   background-color: #ffffff;
   border-radius: 10px;
@@ -220,7 +199,6 @@ div.wrappr {
   background-color: #d0d0d0;
 }
 
-/* Контент списку */
 .content {
   max-height: 0;
   overflow: hidden;
@@ -229,7 +207,6 @@ div.wrappr {
   padding-left: 15px;
 }
 
-/* Показати контент при натисканні відповідної підкнопки */
 #love-toggle:checked + .sub-btn + .content,
 #dir-toggle:checked + .sub-btn + .content,
 #int-toggle:checked + .sub-btn + .content {
@@ -242,7 +219,6 @@ div.artworks {
   justify-content: center;
 }
 
-/* контактна інфа */
 .contacts-section {
   width: 350px;
   margin: 20px auto;
@@ -260,14 +236,12 @@ div.artworks {
   text-align: center;
 }
 
-/* Контейнери кнопок */
 .contacts-container {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-/* Кнопки */
 .child a {
   display: block;
   background-color: #e0e0e0;
